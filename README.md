@@ -1,5 +1,7 @@
 # TP2-LemayAnthony-VilleneuveRaphael
 
+git push --force origin raph_branch
+
 **Mandat**
 Site Web fictif sur la thématique du film «Pulp fiction».
 
@@ -20,4 +22,3 @@ https://www.figma.com/file/5B7RGquKZIYQo4KY8sPfQ7/Pulp-Fiction?type=design&node-
 **Lien vers notre échéancier Trello**
 
 https://trello.com/invite/b/UQniA3II/ATTI5ab265bcca19af76c072c207bdefb8adFCAEDF4E/tp2-integration-web-2
-
