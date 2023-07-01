@@ -3,10 +3,15 @@
 **Mandat**
 Site Web fictif sur la thématique du film «Pulp fiction».
 
+**Cours**
+Intégration d'interfaces Web 2
+AEC en développement Front-End Hiver 2023
+Cohorte 01050
+
 **Coéquipiers**
-Anthony Lemay
-Raphael Villeneuve
-Cours d'intégration d'interfaces Web 2
+Anthony Lemay ID#6206911
+Raphael Villeneuve ID# //à compléter
+
 
 **Maquette visuelle Figma**
 
