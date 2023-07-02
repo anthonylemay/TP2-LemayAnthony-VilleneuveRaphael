@@ -5,129 +5,122 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" href="dist/style.css"> -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style/css/style.css">
+    <link rel="stylesheet" href="/style/css/normalize.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jxs1pvy.css">
+    <link rel="icon" href="img/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="script.js" defer></script>
 </head>
 
-<body class="mx-auto">
-    <header>
-        
-        <nav class="flex flex-row col  justify-between p-5 bg-stone-900 md:flex md:items-center md:justify-between">
+<body>
+    <header class="w-screen bg--charcoal">
+        <nav class="container mx-auto flex flex-row justify-between p-5">
             <div class="flex justify-center items-center">
-                <span>
-                    <a href="index.html">
-                        <img class="inline cursor-pointer" src="IMG/pulp_logo.png" alt="image du logo pulp_fiction">
+                <span class="w-4/5 hover:w-full">
+                    <a href="index.html"><img src="./img/menu__logo.svg" alt="logo du film Pulp Fiction">
                     </a>
                 </span>
             </div>
-            <ul class="md:flex md:items-center bg-black">
+            <ul class="md:flex md:items-end">
                 <li class="mx-4 my-6 md:my-0">
-                    <a class="cursor-pointer text-slate-50" href="index.html">Accueil</a>
+                    <a class="" href="index.html"><img class="inline-flex mr-3 align-bottom" src="./img/smoke.svg" alt="icône de cigarettes Red Apple">Accueil</a>
                 </li>
                 <li class="mx-4 my-6 md:my-0">
-                    <a class="cursor-pointer text-slate-50" href="index.html">Tournage</a>
+                    <a class="" href="tournage.html"><img class="inline-flex mr-2 align-bottom" src="./img/milkshake.svg" alt="icône de Milkshake à 5$">Tournage</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <section class="h-auto bg-orange-200">
-   
-
-        <div class="container-fluid  text-center grid grid-cols-12  gap-0 mar flex items-center">
-
+    <section class="h-auto py-20 container mx-auto">
+        <div class="container-fluid  text-center grid grid-cols-12  gap-0 items-center">
             <div class=" col-span-6 lg:h-96 flex flex-col items-center justify-center">
-
-                <div class="lg:text-center text-black">
-                    <H2 class="text-xl">DÉJANTÉ, ÉLÉGANT,<br> ICONIQUE</H2>
-                    <p>
-                        Avec son scénario non linéaire et ses dialogues ciselés, <br> Pulp Fiction a redéfini
-                        le genre du thriller <br> criminel. Les personnages emblématiques et les <br> répliques
-                        mémorables
-                        en ont fait une œuvre <br> d'art cinématographique à l'influence durable.
+                    <h2 class="f--caramel text-4xl w-4/5 text-center">DÉJANTÉ, ÉLÉGANT, ICONIQUE</h2>
+                    <p class="p-6 place-items-center w-4/5">
+                        Avec son scénario non linéaire et ses dialogues ciselés, Pulp Fiction a redéfini
+                        le genre du thriller criminel. Les personnages emblématiques et les répliques
+                        mémorables en ont fait une œuvre d'art cinématographique à l'influence durable.
                     </p>
-                </div>
-
-                <div class="text-black lg:m-6">
-                    <button>
-                        <p> Choisir sa plateforme</p>
-                    </button>
-                    <button>
-                        VISIONNER
-                    </button>
-                </div>
-            
+                    <div class="lg:m-6 items-center">
+                        <form class="inline-flex" action="https://www.netflix.com">
+                            <label class="label--hidden" for="plateforme">Plateforme de télédiffusion</label>
+                            <select class="cursor-pointer select--btn" name="plateforme" id="plateforme">
+                                <option disabled selected>Choisir sa plateforme</option>
+                                <option value="hulu" id="stream1">Hulu</option>
+                                <option value="netflix" id="stream2">Netflix</option>
+                                <option value="apple-tv" id="stream3">Apple TV</option>
+                            </select>
+                            <button class="form--btn" type="submit" value="Submit">VISIONNER</button>
+                        </form>
+                    </div>            
             </div> 
 
-            <div class="bg-slate-500 col-span-6 flex flex-col justify-center items-center">
+            <div class="col-span-6 flex flex-col justify-center items-center">
                 <div class="relative h-full">
                     <div class="absolute inset-0 flex items-center justify-between">
-                        <button id="boutonPrecedent" class="h-8 w-8 focus:outline-none">
-                            <img src="fleche_left.png" alt="Flèche gauche" class="h-full w-full">
+                        <button id="bouttonPrecedent" class="h-8 w-8 focus:outline-none">
+                            <img src="img/arrow--left.svg" alt="Flèche gauche" class="h-full w-full">
                         </button>
-                        <button id="boputtonSuivant" class="h-8 w-8 focus:outline-none">
-                            <img src="fleche_right.png" alt="Flèche droite" class="h-full w-full">
+                        <button id="bouttonSuivant" class="h-8 w-8 focus:outline-none">
+                            <img src="img/arrow--right.svg" alt="Flèche droite" class="h-full w-full">
                         </button>
                     </div>
                     
                     <div id="carousel" class="h-64 w-48 flex flex-col items-center justify-center">
 
-                       <div> <img src="IMG/img_car_1.png" alt="Image 1">  </div>
-                       <div> <img src="IMG/img_car_2.png" alt="Image 2">   </div>
-                       <div> <img src="IMG/img_car_3.png" alt="Image 3">   </div>
-                       <div> <img src="IMG/img_car_4.png" alt="Image 4">   </div>
-                       <div> <img src="IMG/img_car_5.png" alt="Image 5">   </div>
-                        
-                        <!-- Ajoutez les autres images ici -->
+                       <div> <img class="rounded" src="img/img_car_1.png" alt="Image de carousel 1">  </div>
+                       <!--
+                        <div> <img class="rounded" src="img/img_car_2.png" alt="Image de carousel 2">   </div>
+                        <div> <img class="rounded" src="img/img_car_3.png" alt="Image de carousel 3">   </div>
+                        <div> <img class="rounded" src="img/img_car_4.png" alt="Image de carousel 4">   </div>
+                        <div> <img class="rounded" src="img/img_car_5.png" alt="Image de carousel 5">   </div>
+                     -->
                     </div>
                 </div>
             </div>
         </div>
-        <div class="bg-orange-200 flex flex-row text-center justify-center">
-            <img class="w-1/4" src="IMG/streaming services.png" alt="Images des télédifuseurs">
+        <div class="streaming flex flex-row text-center items-center justify-center">
+            <a href="https://hulu.com" target="_blank"><img class="w-20 m-3" src="img/hulu.svg" alt="Images des télédifuseurs hulu"></a>
+            <a href="https://netflix.com" target="_blank"><img class="w-24 m-3" src="img/netflix.svg" alt="Images des télédifuseurs netflix"></a>
+            <a href="https://appletv.com" target="_blank"><img class="w-20 m-3" src="img/appletv.svg" alt="Images des télédifuseurs apple tv"></a>
         </div>
     </section>
-
-    <section class="h-96">
-
+    <section class="h-96  container mx-auto">
     </section>
+<footer class="md:w-auto h-64 md:h-32 flex place-items-center md:justify-between md:items-center bg--charcoal  text-center">
+    <div class="flex flew-row items-center justify-between container mx-auto">
+    <div class="md:flex md:flex-col md:justify-center md:items-center">
 
-</body>
-<footer
-    class="md:w-auto h-64 md:h-32 flex justify-evenly items-center md:justify-between md:items-center bg-stone-900  text-center text-slate-50 ">
-
-    <div class="md:w-96 md:flex md:flex-col md:justify-center md:items-center">
-
-        <div class="md:flex md:items-center ">
-
-            <div class="flex items-center mt-4"> <img class="mr-4" src="IMG/ph_coffee-fill.png"
-                    alt="Tasse de café chaud">
-                <a class="text-slate-50" href="tel:+450-sos-BS">450-S.O.S-BS</a>
+        <div class="flex flex-row">
+            <div class="mt-4 mx-4"> 
+                <a class="hover:opacity-50" href="tel:+18008439653"><img class="mr-2 inline-flex" src="img/footer__coffee.svg"
+                    alt="Tasse de café chaud">+1 (800) THE WOLF</a>
             </div>
-
-            <div class="flex items-center mt-4"><img class="mr-4 md:ml-4" src="IMG/ep_briefcase.png" alt="briefcase">
-                <a class="text-slate-50" href="tel:+450-sos-BS">450-SOS-BS</a>
+            <div class="mt-4 mx-0">
+                <a class="hover:opacity-50" href="mailto:666@mrwallace.com"><img class="mr-2 inline-flex" src="img/footer__briefcase.svg" alt="icône de malette">666@MrWallace.com</a>
             </div>
         </div>
 
         <div class="md:flex md:items-center md:ml-4 mt-4">
-            <div class="flex items-center"> <img class="mr-4" src="IMG/tabler_cherry-filled.png" alt="image de cerise">
-                <p class="text-slate-50">Cégep de Trois-Rivières</p>
+            <div class="flex items-center">
+                <a class="hover:opacity-50" href="https://formation-mauricie.ca/programme/developpement-web/" target="_blank"><img class="mr-2 inline-flex" src="img/footer__cherry.svg" alt="icône de cerise">CÉGEP DE TROIS-RIVIÈRES</a>
             </div>
         </div>
     </div>
-
-    <div
-        class="flex flex-col justify-center items-center md:flex-row  md:w-96 md:justify-evenly md:items-center md:mr-10">
-        <div>
-            <h3 class=" text-orange-300">WRITTEN AND DIRECTED BY</h3>
-            <P class="mt-4 md:mt-2">ANTHONY LEMAY <BR> RAPHAËL VILLENEUVE</P>
+        <div class="flex flex-col justify-center items-center md:flex-row  md:w-96 md:justify-evenly md:items-center md:mr-10">
+            <div class="flex flex-col">
+                <h3>WRITTEN AND DIRECTED BY</h3>
+                <a class="mt-2 hover:opacity-50" href="https://www.anthonylemay.com" target="_blank">ANTHONY LEMAY</a>
+                <a class="mt-2 hover:opacity-50" href="https://www.raphaelvilleneuve.com" target="_blank">RAPHAËL VILLENEUVE</a>
+            </div>
+            <div class="mt-4 ml-4 md:ml-0 inline-flex place-items-center">
+                <a class="mx-1" href="https://www.imdb.com/title/tt0110912/" target="_blank"><img class="social" src="img/imdb.svg" alt="Icône de Imdb vers lien externe"></a>
+                <a class="mx-1" href="https://www.rottentomatoes.com/m/pulp_fiction" target="_blank"><img class="social" src="img/rottentomato.svg" alt="Icône de Rotten Tomatoes vers lien externe"></a>
+                <a class="mx-1" href="https://en.wikipedia.org/wiki/Pulp_Fiction" target="_blank"><img class="social" src="img/wikipedia.svg" alt="Icône de Rotten Tomatoes vers lien externe"></a>
+            </div>
         </div>
-        <div class="mt-4 ml-4 md:ml-0"><img src="IMG/social.png" alt="IMAGE DE LOGOS"></div>
     </div>
-
 </footer>
-
+</body>
 </html>

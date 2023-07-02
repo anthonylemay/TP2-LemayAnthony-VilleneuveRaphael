@@ -1,0 +1,25 @@
+$yellow: #E5A33F; 
+$sky: #b0d8df;
+$cream: #FEF6D6;
+$white: #ffffff;
+$charcoal: #2B2F2E;
+$black:#000000;
+$brown: #382017;
+$red: #CE3D31;
+$caramel: #9B6112;
+
+@mixin f--caramel {
+    color: $caramel;
+}
+
+@mixin bg--charcoal {
+    background-color: $charcoal;
+}
+
+.f--caramel { //f pour font
+    @include f--caramel;
+  }
+
+.bg--charcoal { //f pour font
+    @include bg--charcoal;
+}
