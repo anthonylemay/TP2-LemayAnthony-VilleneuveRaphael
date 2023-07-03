@@ -1,0 +1,24 @@
+@use './theme/colors';
+@use './theme/fonts';
+
+
+footer{
+    & .social, a img{
+    filter: invert(60%) sepia(99%) saturate(329%) hue-rotate(354deg) brightness(96%) contrast(86%);
+    &:hover{
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(214deg) brightness(106%) contrast(106%);
+    }
+    & .social a:hover{
+        opacity:0.8;
+    }
+    }
+}
+
+footer h3{
+    color: colors.$yellow;
+}
+
+footer{
+    font-family: fonts.$h;
+    color: colors.$cream;
+}

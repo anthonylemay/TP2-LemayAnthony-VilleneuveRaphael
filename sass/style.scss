@@ -1,12 +1,93 @@
-@import '/nodes_modules/tailwindcss/base.css';
-@import '/nodes_modules/tailwindcss/components.css';
-@import '/nodes_modules/tailwindcss/utilities.css';
+@use './theme/colors';
+@use './theme/fonts';
+@use './_header';
+@use './_footer';
+
+@import '/node_modules/tailwindcss/base.css';
+@import '/node_modules/tailwindcss/components.css';
+@import '/node_modules/tailwindcss/utilities.css';
 
 body{
-    max-width: 1300px;
+    background-color: colors.$cream;
     border: 4px solid rgb(240, 9, 240);
 }
 
-p{
-    color:black;
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+  }
+  
+  .label--hidden{
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+select{
+  appearance: unset;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.select--btn {
+  background-color: colors.$white;
+  color: colors.$black;
+  font-size: fonts.$font-size--min;
+  font-family: fonts.$p;
+  font-weight: fonts.$ultra;
+  border: .25rem solid colors.$black;
+  margin:1rem;
+  text-align:center;
+  padding: .5rem 2rem;
+  &:hover{
+    color: colors.$white;
+    background-color: colors.$black;
+  }
+}
+  
+button.form--btn{
+  padding: 0.25rem 3.5rem;
+  margin: 1rem;
+  font-family: fonts.$tonic;
+  font-size: fonts.$font-size;
+  color: colors.$white;
+  background-color: colors.$black;
+  border: 0 solid;
+  display:flex;
+  place-items:center;
+  &:hover{
+    color: colors.$black;
+    background-color: colors.$white;
+    border: .25rem solid colors.$black;
+  }
+}
+
+.streaming a img:hover{
+  filter: invert(41%) sepia(58%) saturate(1039%) hue-rotate(324deg) brightness(78%) contrast(110%);
+}
+
+.title__sub{
+  font-family: fonts.$sub;
+}
+
+.shadow-inner {
+  --tw-shadow: o 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.custom-shadow {
+  --tw-shadow: 10px 5px 25px 25px rgba(0, 0, 0, 1);
+  box-shadow: var(--tw-shadow);
 }
