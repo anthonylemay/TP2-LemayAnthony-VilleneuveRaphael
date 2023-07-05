@@ -12,6 +12,13 @@ body {
   border: 4px solid rgb(240, 9, 240);
 }
 
+@media (max-width:767px){
+  .text__hover--hiden{
+    display: none;
+
+  }
+}
+
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -27,7 +34,7 @@ body {
 
 .label--hidden {
   position: absolute;
-  left: -9999px;
+  left: -9999px; //lol 
   top: auto;
   width: 1px;
   height: 1px;
@@ -110,3 +117,4 @@ button.form--btn {
  .sectionPhoto{
   height: 1200px;  //temporaire
  }
+
