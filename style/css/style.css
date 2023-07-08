@@ -65,6 +65,7 @@ body {
     display: none;
   }
 }
+
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -148,4 +149,5 @@ button.form--btn:hover {
 
 .sectionPhoto {
   height: 1200px;
+
 }/*# sourceMappingURL=style.css.map */
