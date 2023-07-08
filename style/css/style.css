@@ -61,7 +61,7 @@ body {
 }
 
 @media (max-width: 767px) {
-  .text__hover--hiden {
+  .text__hover--hidden {
     display: none;
   }
 }
