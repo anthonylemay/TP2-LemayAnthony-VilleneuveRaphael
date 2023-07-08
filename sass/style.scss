@@ -7,34 +7,41 @@
 @import '/node_modules/tailwindcss/components.css';
 @import '/node_modules/tailwindcss/utilities.css';
 
-body{
-    background-color: colors.$cream;
-    border: 4px solid rgb(240, 9, 240);
+body {
+  background-color: colors.$cream;
+  border: 4px solid rgb(240, 9, 240);
+}
+
+@media (max-width:767px){
+  .text__hover--hidden{
+    display: none;
+
+  }
 }
 
 .screen-reader-text {
-    border: 0;
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    word-wrap: normal !important;
-  }
-  
-  .label--hidden{
-    position: absolute;
-    left: -9999px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-  }
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
 
-select{
+.label--hidden {
+  position: absolute;
+  left: -9999px; //lol 
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+select {
   appearance: unset;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -47,16 +54,17 @@ select{
   font-family: fonts.$p;
   font-weight: fonts.$ultra;
   border: .25rem solid colors.$black;
-  margin:1rem;
-  text-align:center;
+  margin: 1rem;
+  text-align: center;
   padding: .5rem 2rem;
-  &:hover{
+
+  &:hover {
     color: colors.$white;
     background-color: colors.$black;
   }
 }
-  
-button.form--btn{
+
+button.form--btn {
   padding: 0.25rem 3.5rem;
   margin: 1rem;
   font-family: fonts.$tonic;
@@ -64,15 +72,48 @@ button.form--btn{
   color: colors.$white;
   background-color: colors.$black;
   border: 0 solid;
-  display:flex;
-  place-items:center;
-  &:hover{
+  display: flex;
+  place-items: center;
+
+  &:hover {
     color: colors.$black;
     background-color: colors.$white;
     border: .25rem solid colors.$black;
   }
 }
 
-.streaming a img:hover{
+.streaming a img:hover {
   filter: invert(41%) sepia(58%) saturate(1039%) hue-rotate(324deg) brightness(78%) contrast(110%);
 }
+
+.title__sub {
+  font-family: fonts.$sub;
+}
+
+.pic__shadow{
+  box-shadow: 10px 10px 1px 1px rgba(0, 0, 0, 0.9);
+  // &--1 {
+  // }
+  // &--2 {
+  // }
+  // &--3 {
+  // }
+}
+
+.container-fluid {
+
+  width: 100%;
+ 
+  padding-right: 15px;
+ 
+  padding-left: 15px;
+ 
+  margin-right: auto;
+ 
+  margin-left: auto;
+ 
+ }
+
+ .sectionPhoto{
+  height: 1200px;  //temporaire
+ }
