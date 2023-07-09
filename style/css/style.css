@@ -10,6 +10,14 @@
   background-color: #2B2F2E;
 }
 
+.f--yellow {
+  color: #E5A33F;
+}
+
+.bg--yellow {
+  background-color: #E5A33F;
+}
+
 h4, h3, h2, h1 {
   font-family: "itc-benguiat", sans-serif;
   font-weight: 900;
@@ -55,6 +63,14 @@ footer {
   color: #FEF6D6;
 }
 
+.card__actor a img {
+  filter: invert(12%) sepia(12%) saturate(2253%) hue-rotate(331deg) brightness(96%) contrast(94%);
+}
+.card__actor a img:hover {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(214deg) brightness(106%) contrast(106%);
+  opacity: 0.8;
+}
+
 body {
   background-color: #FEF6D6;
   border: 4px solid rgb(240, 9, 240);
@@ -65,7 +81,6 @@ body {
     display: none;
   }
 }
-
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -149,5 +164,4 @@ button.form--btn:hover {
 
 .sectionPhoto {
   height: 1200px;
-
 }/*# sourceMappingURL=style.css.map */
