@@ -16,10 +16,26 @@ $caramel: #9B6112;
     background-color: $charcoal;
 }
 
+@mixin f--yellow {
+    color: $yellow;
+}
+
+@mixin bg--yellow {
+    background-color: $yellow;
+}
+
 .f--caramel { //f pour font
     @include f--caramel;
   }
 
 .bg--charcoal { //f pour font
     @include bg--charcoal;
+}
+
+.f--yellow{
+    @include f--yellow;
+}
+
+.bg--yellow {
+    @include bg--yellow;
 }
