@@ -24,11 +24,15 @@ $caramel: #9B6112;
     background-color: $yellow;
 }
 
-.f--caramel { //f pour font
+@mixin f--red{
+    color: $red;
+}
+
+.f--caramel {
     @include f--caramel;
   }
 
-.bg--charcoal { //f pour font
+.bg--charcoal {
     @include bg--charcoal;
 }
 
@@ -39,3 +43,15 @@ $caramel: #9B6112;
 .bg--yellow {
     @include bg--yellow;
 }
+
+.f--red{
+    @include f--red;
+}
+
+@media (min-width: 768px) {
+    .custom-menu-hover {
+      &:hover {
+        color:$red;
+      }
+    }
+  }
