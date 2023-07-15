@@ -22,6 +22,10 @@
   color: #CE3D31;
 }
 
+.bg--red {
+  background-color: #CE3D31;
+}
+
 @media (min-width: 768px) {
   .custom-menu-hover:hover {
     color: #CE3D31;

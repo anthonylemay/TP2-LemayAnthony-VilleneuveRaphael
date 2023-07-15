@@ -28,6 +28,10 @@ $caramel: #9B6112;
     color: $red;
 }
 
+@mixin bg--red {
+    background-color: $red;
+}
+
 .f--caramel {
     @include f--caramel;
   }
@@ -46,6 +50,10 @@ $caramel: #9B6112;
 
 .f--red{
     @include f--red;
+}
+
+.bg--red{
+    @include bg--red;
 }
 
 @media (min-width: 768px) {
