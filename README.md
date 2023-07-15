@@ -14,6 +14,11 @@ Cohorte 01050
 Anthony Lemay ID#6206911
 Raphael Villeneuve ID# //à compléter
 
+**Composantes Tailwind**
+Menu de naviguation - FlowBite Tailwind CSS Mega Menu
+https://flowbite.com/docs/components/mega-menu/
+
+
 
 **Maquette visuelle Figma**
 

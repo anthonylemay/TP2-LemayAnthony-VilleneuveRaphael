@@ -18,6 +18,19 @@
   background-color: #E5A33F;
 }
 
+.f--red {
+  color: #CE3D31;
+}
+
+.bg--red {
+  background-color: #CE3D31;
+}
+
+@media (min-width: 768px) {
+  .custom-menu-hover:hover {
+    color: #CE3D31;
+  }
+}
 h4, h3, h2, h1 {
   font-family: "itc-benguiat", sans-serif;
   font-weight: 900;
@@ -115,9 +128,10 @@ select {
   font-family: "yrsa", sans-serif;
   font-weight: 900;
   border: 0.25rem solid #000000;
-  margin: 1rem;
   text-align: center;
-  padding: 0.5rem 2rem;
+  align-items: center;
+  justify-content: center;
+  width: auto;
 }
 .select--btn:hover {
   color: #ffffff;
@@ -125,15 +139,15 @@ select {
 }
 
 button.form--btn {
-  padding: 0.25rem 3.5rem;
-  margin: 1rem;
   font-family: "rama-slab-e", sans-serif;
   font-size: 1.75rem;
   color: #ffffff;
   background-color: #000000;
   border: 0 solid;
   display: flex;
-  place-items: center;
+  align-items: center;
+  justify-content: center;
+  width: auto;
 }
 button.form--btn:hover {
   color: #000000;

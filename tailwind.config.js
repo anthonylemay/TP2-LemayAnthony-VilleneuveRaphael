@@ -2,11 +2,13 @@
 module.exports = {
   content: ["./index.html"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        flowbite:{
+          100: '#ffffff',
+        }
+      }
+    },
   },
   plugins: [],
 }
-
-
-
-

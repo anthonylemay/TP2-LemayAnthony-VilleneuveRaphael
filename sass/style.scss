@@ -57,9 +57,10 @@ select {
   font-family: fonts.$p;
   font-weight: fonts.$ultra;
   border: .25rem solid colors.$black;
-  margin: 1rem;
   text-align: center;
-  padding: .5rem 2rem;
+  align-items:center;
+  justify-content: center;
+  width: auto;
 
   &:hover {
     color: colors.$white;
@@ -68,15 +69,15 @@ select {
 }
 
 button.form--btn {
-  padding: 0.25rem 3.5rem;
-  margin: 1rem;
   font-family: fonts.$tonic;
   font-size: fonts.$font-size;
   color: colors.$white;
   background-color: colors.$black;
   border: 0 solid;
   display: flex;
-  place-items: center;
+  align-items:center;
+  justify-content: center;
+  width: auto;
 
   &:hover {
     color: colors.$black;
