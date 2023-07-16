@@ -25,12 +25,15 @@ body {
   word-wrap: normal !important;
 }
 
-a:focus, select:focus, button:focus, input:focus, textarea:focus, img:focus, li:focus{
+a, select, button, input, textarea, img, li{
+  &:focus{
   outline-color:colors.$white;
-  outline-width: 1rem;
-  border: 2rem solid colors.$yellow;
+  outline-width: .1rem;
+  border: .25rem solid colors.$yellow;
   opacity: 0.9;
-} 
+  }
+}
+
 
 .label--hidden {
   position: absolute;
@@ -59,6 +62,13 @@ select{
     color: colors.$white;
     background-color: colors.$black;
   }
+
+  &:focus {
+    outline-color: colors.$white;
+    outline-width: .25rem;
+    border: .25rem solid colors.$yellow;
+    opacity: 0.9;
+  }
 }
 
 button.form--btn {
@@ -74,6 +84,13 @@ button.form--btn {
     color: colors.$black;
     background-color: colors.$white;
     border: .25rem solid colors.$black;
+  }
+  
+  &:focus {
+    outline-color: colors.$white;
+    outline-width: .25rem;
+    border: .25rem solid colors.$yellow;
+    opacity: 0.9;
   }
 }
 
