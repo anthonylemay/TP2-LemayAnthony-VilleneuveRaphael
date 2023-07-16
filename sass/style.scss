@@ -12,10 +12,6 @@ body {
   background-color: colors.$cream;
 }
 
-.firstSec_hauteur{
-  height: 700px;
-}
-
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -29,6 +25,13 @@ body {
   word-wrap: normal !important;
 }
 
+a:focus, select:focus, button:focus, input:focus, textarea:focus, img:focus, li:focus{
+  outline-color:colors.$white;
+  outline-width: 1rem;
+  border: 2rem solid colors.$yellow;
+  opacity: 0.9;
+} 
+
 .label--hidden {
   position: absolute;
   left: -9999px; //lol 
@@ -38,10 +41,10 @@ body {
   overflow: hidden;
 }
 
-select {
-  appearance: unset;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+select{
+	appearance: none; 
+	-webkit-appearance: none;
+	-moz-appearance: none; 
 }
 
 .select--btn {
@@ -51,9 +54,6 @@ select {
   font-family: fonts.$p;
   font-weight: fonts.$ultra;
   border: .25rem solid colors.$black;
-  margin: 1rem;
-  text-align: center;
-  padding: .5rem 2rem;
 
   &:hover {
     color: colors.$white;
@@ -62,8 +62,6 @@ select {
 }
 
 button.form--btn {
-  padding: 0.25rem 3.5rem;
-  margin: 1rem;
   font-family: fonts.$tonic;
   font-size: fonts.$font-size;
   color: colors.$white;
@@ -113,4 +111,3 @@ button.form--btn {
  .text__hover--hidden{
   display: none;
  }
-

@@ -18,6 +18,12 @@ Raphael Villeneuve ID#1532416
 Menu de naviguation - FlowBite Tailwind CSS Mega Menu
 https://flowbite.com/docs/components/mega-menu/
 
+Carousel - FlowBite Carousel CSS Carousel
+https://flowbite.com/docs/components/carousel/
+
+Accordéon - FlowBite Tailwind CSS Accordéon
+https://flowbite.com/docs/components/accordion/
+
 
 
 **Maquette visuelle Figma**
