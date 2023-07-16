@@ -26,6 +26,10 @@
   background-color: #CE3D31;
 }
 
+.bg--sky {
+  background-color: #b0d8df;
+}
+
 @media (min-width: 768px) {
   .custom-menu-hover:hover {
     color: #CE3D31;
@@ -106,8 +110,8 @@ body {
 
 a:focus, select:focus, button:focus, input:focus, textarea:focus, img:focus, li:focus {
   outline-color: #ffffff;
-  outline-width: 1rem;
-  border: 2rem solid #E5A33F;
+  outline-width: 0.1rem;
+  border: 0.25rem solid #E5A33F;
   opacity: 0.9;
 }
 
@@ -138,6 +142,12 @@ select {
   color: #ffffff;
   background-color: #000000;
 }
+.select--btn:focus {
+  outline-color: #ffffff;
+  outline-width: 0.25rem;
+  border: 0.25rem solid #E5A33F;
+  opacity: 0.9;
+}
 
 button.form--btn {
   font-family: "rama-slab-e", sans-serif;
@@ -153,6 +163,12 @@ button.form--btn:hover {
   background-color: #ffffff;
   border: 0.25rem solid #000000;
 }
+button.form--btn:focus {
+  outline-color: #ffffff;
+  outline-width: 0.25rem;
+  border: 0.25rem solid #E5A33F;
+  opacity: 0.9;
+}
 
 .streaming a img:hover {
   filter: invert(41%) sepia(58%) saturate(1039%) hue-rotate(324deg) brightness(78%) contrast(110%);
@@ -163,9 +179,9 @@ button.form--btn:hover {
 }
 
 .pic__shadow {
-  box-shadow: 10px 10px 1px 1px rgba(0, 0, 0, 0.9);
+  box-shadow: 10px 10px rgb(0, 0, 0);
 }
-.pic__shadow--4 {
+.pic__shadow--video {
   width: 100%;
   height: 100%;
 }

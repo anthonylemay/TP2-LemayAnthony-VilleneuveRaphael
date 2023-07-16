@@ -1,208 +1,224 @@
 <!DOCTYPE html>
 <html lang="fr">
-
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/style/css/style.css" />
-    <link rel="stylesheet" href="/style/css/normalize.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/jxs1pvy.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
-    <link rel="icon" href="img/favicon.ico" />
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <link rel="stylesheet" href="/style/css/style.css" >
+    <link rel="stylesheet" href="/style/css/normalize.css" >
+    <link rel="stylesheet" href="https://use.typekit.net/jxs1pvy.css" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" >
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js" defer></script>
-    <script src="script.js" defer></script>
+    <link rel="icon" href="img/favicon.ico" >
     <title>Accueil - Pulp Fiction</title>
   </head>
 
   <body>
-    <a class="screen-reader-text" href="#content" tabindex="1">Aller au contenu principal</a>
+    <a class="screen-reader-text" href="#content">Aller au contenu principal</a>
     <header class="bg--charcoal">
-    <nav class="container mx-auto">
+      <nav class="container mx-auto">
         <div class="flex items-center justify-between p-4">
-              <a href="index.html" class="flex place-items-center">
-                <span class="w-4/5 hover:w-full">
-                  <img src="./img/menu__logo.svg" class="h-10 md:h-12 mr-3" alt="logo du film Pulp Fiction" />
-                </span>
-              </a>
-            <div id="mega-menu-icons" class="items-center justify-center hidden w-full md:flex md:w-auto md:order-1">
-              <ul class="flex flex-col justify-center items-baseline mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="index.html" class="flex items-end py-2 pl-3 pr-4 f--yellow border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 custom-menu-hover md:p-0" aria-current="page"><img class="inline-flex mr-3 align-bottom" src="./img/smoke.svg" alt="icône de cigarettes Red Apple" /><span>Accueil</span></a>
-                </li>
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="tournage.html" class="flex items-end py-2 pl-3 pr-4 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 custom-menu-hover md:p-0"><img class="inline-flex mr-2 align-bottom" src="./img/milkshake.svg" alt="icône de Milkshake à 5$" />Tournage</a>
-                </li>
-              </ul>
+          <a href="index.html" class="flex place-items-center">
+            <span class="w-4/5 hover:w-full">
+              <img src="./img/menu__logo.svg" class="h-10 md:h-12 mr-3" alt="logo du film Pulp Fiction" >
+            </span>
+          </a>
+          <div id="mega-menu-icons" class="items-center justify-center hidden w-full md:flex md:w-auto md:order-1">
+            <ul class="flex flex-col justify-center items-baseline mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
+              <li class="mx-4 my-6 md:my-0">
+                <a href="index.html" class="flex items-end py-2 pl-3 pr-4 f--yellow border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 custom-menu-hover md:p-0" aria-current="page"
+                  ><img class="inline-flex mr-3 align-bottom" src="./img/smoke.svg" alt="icône de cigarettes Red Apple" ><span>Accueil</span></a
+                >
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="tournage.html" class="flex items-end py-2 pl-3 pr-4 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 custom-menu-hover md:p-0"
+                  ><img class="inline-flex mr-2 align-bottom" src="./img/milkshake.svg" alt="icône de Milkshake à 5$" >Tournage</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex items-center md:order-2 md:hidden">
+            <button
+              data-collapse-toggle="mega-menu-icons"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm f--yellow rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              aria-controls="mega-menu-icons"
+              aria-expanded="false">
+              <span class="sr-only">Ouvrir le menu principal</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <h2 class="screen-reader-text">Section de présentation du film et du choix de plateforme de télédiffusion.</h2>
+      <div class="h-auto py-20 container mx-auto">
+        <div class="container-fluid text-center grid grid-cols-12 gap-2 md:gap-2 lg:gap-2 items-center justify-center">
+          <div class="col-span-12 md:col-span-6 flex flex-col flex-wrap items-center md:items-start justify-center">
+            <h2 class="f--caramel text-4xl md:text-3xl lg:text-4xl w-full text-center md:text-left xl:w-4/5 2xl:w-3/5">DÉJANTÉ, ÉLÉGANT, ICONIQUE</h2>
+            <p class="col-span-8 py-6 place-items-center w-4/5 md:w-full text-justify md:text-left lg:w-4/5">
+              Avec son scénario non linéaire et ses dialogues ciselés, Pulp Fiction a redéfini le genre du thriller criminel. Les personnages emblématiques et les répliques mémorables en ont fait une œuvre d'art cinématographique à l'influence
+              durable.
+            </p>
+            <div>
+              <form class="grid grid-cols-9 gap-4 md:gap-1 lg:gap-4" action="https://www.netflix.com">
+                <label class="label--hidden" for="plateforme">Plateforme de télédiffusion</label>
+                <select class="col-span-5 text-base cursor-pointer select--btn pl-2 md:pl-1 lg:pl-2" name="plateforme" id="plateforme">
+                  <option disabled selected>Choisir sa plateforme</option>
+                  <option value="hulu" id="stream1">Hulu</option>
+                  <option value="netflix" id="stream2">Netflix</option>
+                  <option value="apple-tv" id="stream3">Apple TV</option>
+                </select>
+                <button class="col-span-4 form--btn px-4 py-2 flex justify-center" type="submit" value="Submit">VISIONNER</button>
+              </form>
+            </div>
+            <div class="md:hidden streaming flex flex-row text-center items-center justify-center mt-10">
+              <a href="https://hulu.com" target="_blank"><img class="w-20 m-3" src="img/hulu.svg" alt="Images des télédifuseurs hulu" ></a>
+              <a href="https://netflix.com" target="_blank"><img class="w-24 m-3" src="img/netflix.svg" alt="Images des télédifuseurs netflix" ></a>
+              <a href="https://appletv.com" target="_blank"><img class="w-20 m-3" src="img/appletv.svg" alt="Images des télédifuseurs apple tv" ></a>
+            </div>
+          </div>
+          <div id="default-carousel" class="relative col-span-12 md:col-start-7 lg:col-start-7 md:col-span-7" data-carousel="slide">
+            <div class="relative h-96 overflow-hidden rounded-xl">
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/car_img_1.png" class="rounded-xl absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Image du fameux milkshake à 5$." >
+              </div>
+
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/car_img_2.png" class="rounded-xl absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Image de couverture de l'affiche du film." >
+              </div>
+
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/car_img_3.png" class="rounded-xl absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Vincent et Jules en veston qui pointent leurs armes." >
+              </div>
+
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/car_img_4.png" class="rounded-xl absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Image de Mia Wallace qui goûte à son milkshake" >
+              </div>
+
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/car_img_5.png" class="rounded-xl absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Image de Vincent qui s'apprête à boire son milkshake." >
+              </div>
             </div>
 
-            <div class="flex items-center md:order-2 md:hidden">
-              <button data-collapse-toggle="mega-menu-icons" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm f--yellow rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="mega-menu-icons" aria-expanded="false">
-                  <span class="sr-only">Ouvrir le menu principal</span>
-                  <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                  </svg>
-              </button>
-            </div>
-        </div>
-  </nav>
-</header>
-<section>
-  <h2 class="screen-reader-text">Section de présentation du film et du choix de plateforme de télédiffusion.</h2>
-  <div class="h-auto py-20 container mx-auto">
-    <div class="container-fluid text-center grid grid-cols-12 gap-2 md:gap-2 lg:gap-2 items-center justify-center">
-      <div class="col-span-12 md:col-span-6 flex flex-col flex-wrap items-center md:items-start justify-center">
-        <h2 class="f--caramel text-4xl md:text-3xl lg:text-4xl w-full text-center md:text-left xl:w-4/5 2xl:w-3/5">DÉJANTÉ, ÉLÉGANT, ICONIQUE</h2>
-        <p class="col-span-8 py-6 place-items-center w-4/5 md:w-full text-justify md:text-left lg:w-4/5">Avec son scénario non linéaire et ses dialogues ciselés, Pulp Fiction a redéfini le genre du thriller criminel. Les personnages emblématiques et les répliques mémorables en ont fait une œuvre d'art cinématographique à l'influence durable.</p>
-        <div>
-          <form class="grid grid-cols-9 gap-4 md:gap-1 lg:gap-4" action="https://www.netflix.com">
-            <label class="label--hidden" for="plateforme">Plateforme de télédiffusion</label>
-            <select class="col-span-5 text-base cursor-pointer select--btn pl-2 md:pl-1 lg:pl-2" name="plateforme" id="plateforme">
-              <option disabled selected>Choisir sa plateforme</option>
-              <option value="hulu" id="stream1">Hulu</option>
-              <option value="netflix" id="stream2">Netflix</option>
-              <option value="apple-tv" id="stream3">Apple TV</option>
-            </select>
-            <button class="col-span-4 form--btn px-4 py-2 flex justify-center" type="submit" value="Submit">VISIONNER</button>
-          </form>
-        </div>
-        <div class="md:hidden streaming flex flex-row text-center items-center justify-center mt-10">
-          <a href="https://hulu.com" target="_blank"><img class="w-20 m-3" src="img/hulu.svg" alt="Images des télédifuseurs hulu" /></a>
-          <a href="https://netflix.com" target="_blank"><img class="w-24 m-3" src="img/netflix.svg" alt="Images des télédifuseurs netflix" /></a>
-          <a href="https://appletv.com" target="_blank"><img class="w-20 m-3" src="img/appletv.svg" alt="Images des télédifuseurs apple tv" /></a>
-        </div>
-      </div>
-      <div id="default-carousel" class="relative col-span-12 md:col-start-7 lg:col-start-7 md:col-span-7" data-carousel="slide">
-        <!-- Carousel wrapper -->
-        <div class="relative h-96 overflow-hidden rounded-xl">
-          <!-- Item 1 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="img/car_img_1.png" class="rounded-xl absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-          </div>
-          <!-- Item 2 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="img/car_img_2.png" class="rounded-xl absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-          </div>
-          <!-- Item 3 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="img/car_img_3.png" class="rounded-xl absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-          </div>
-          <!-- Item 4 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="img/car_img_4.png" class="rounded-xl absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-          </div>
-          <!-- Item 5 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="img/car_img_5.png" class="rounded-xl absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-          </div>
-        </div>
-        <!-- Slider indicators -->
-        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-16 sm:bottom-10 md:bottom-24 lg:bottom-5 left-1/2">
-          <button type="button" class="w-3 h-3 rounded-full " aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-        </div>
-        <!-- Slider controls -->
-        <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-            </svg>
-            <span class="sr-only">Previous</span>
-          </span>
-        </button>
-        <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg>
-            <span class="sr-only">Next</span>
-          </span>
-        </button>
-      </div>
-    </div>
-    <div class="mt-10 streaming hidden  text-center items-center justify-center md:flex md:flex-row">
-      <a href="https://hulu.com" target="_blank"><img class="w-20 m-3" src="img/hulu.svg" alt="Images des télédifuseurs hulu" /></a>
-      <a href="https://netflix.com" target="_blank"><img class="w-24 m-3" src="img/netflix.svg" alt="Images des télédifuseurs netflix" /></a>
-      <a href="https://appletv.com" target="_blank"><img class="w-20 m-3" src="img/appletv.svg" alt="Images des télédifuseurs apple tv" /></a>
-    </div>
-  </div>
-</section>
-
-    <section class="bg-sky-100 pb-16">
-      <h2 class="screen-reader-text">Section d'images, extraits et contenu inédit et d'inscription à l'info-lettre</h2>
-      <div class="container flex flex-col items-center text-center mx-auto">
-      <!--                    first                           -->
-      <div class="grid xl:grid-cols-3">
-        <div class="xl:col-span-1/3"></div>
-        <div class="xl:col-span-1/3 py-12 flex justify-center">
-          <h2 class="title__sub text-center text-5xl">IMAGES ET EXTRAITS</h2>
-        </div>
-
-        <div class="xl:col-span-1/3"></div>
-      </div>
-
-      <!--                    sec                          -->
-      <div class="grid xl:grid-cols-3">
-        <div class="xl:col-span-1/3"></div>
-
-        <div class="xl:col-span-1/3 flex justify-center items-center flex-wrap text-center">
-          <p class="lg:text-2xl p-4 md:p-0 w-4/5 md:w-full">Recevez des images inédites du tournage de «Pulp Fiction» et sachez-en plus sur le film en vous inscrivant à l’info-lettre!</p>
-        </div>
-
-        <div class="xl:col-span-1/3"></div>
-      </div>
-
-      <!--                    third/"boutton"                  -->
-      <div class="grid my-14">
-        <form class="p-6 md:p-0 flex xl:flex-row">
-          <div class="flex">
-            <label for="email" class="label--hidden">Entrez vote e-mail</label>
-            <input type="email" id="email" name="email" class="select--btn px-20 w-full border-4 border-black rounded-full" required placeholder="Entrez votre e-mail" />
-          </div>
-                <div class="">
-                    <button class="form--btn py-2 px-4 ml-4" type="submit" value="Submit">S'INSCRIRE</button>
-                </div>
-            </form>
-        </div>
-
-       <div class="container-fluid grid grid-cols-12 mx-auto">
-            <div class="flex flex-col justify-center items-center col-start-4 col-end-10  md:col-start-2 md:col-end-6 xl:col-start-1 xl:col-end-5"><img class="rounded-[12px] pic__shadow pic__shadow--1" src="img/image5.png" alt="image du film">
-            <p class="my-6">L’histoire derrière le Hawthorne Grill</p>
+            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-16 sm:bottom-10 md:bottom-24 lg:bottom-5 left-1/2">
+              <button type="button" class="w-3 h-3 rounded-full border-2 border-black" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+              <button type="button" class="w-3 h-3 rounded-full border-2 border-black" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+              <button type="button" class="w-3 h-3 rounded-full border-2 border-black" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+              <button type="button" class="w-3 h-3 rounded-full border-2 border-black" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+              <button type="button" class="w-3 h-3 rounded-full border-2 border-black" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
             </div>
 
-            <div class="flex flex-col justify-center items-center col-start-4 col-end-10  md:col-start-8 md:col-end-12 xl:col-start-5 xl:col-end-9"><img class="rounded-[12px] pic__shadow pic__shadow--2" src="img/image2.png" alt="image du film">
-            <p class="my-6">La danse iconique au Jackrabbit’s slim</p>
-            </div>
-
-            <div class="flex flex-col justify-center items-center col-start-4 col-end-10  md:col-start-2 md:col-end-6 xl:col-start-9 xl:col-end-13"><img class="rounded-[12px] pic__shadow pic__shadow--3" src="img/image3.png" alt="image du film">
-            <p class="mb-20 md:mb-0 mt-6">La révélation de Jules</p>
-            </div>
-            
-            <div class="h-36 flex-col justify-center items-center col-start-4 col-end-10 hidden md:block md:col-start-8 md:col-end-12 xl:h-96 xl:my-28 xl:col-start-4 xl:col-end-10">
-              <iframe class="pic__shadow pic__shadow--4 rounded-[18px]" width="560" height="315" src="https://www.youtube.com/embed/bokzC0iRXoQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                <svg class="w-4 h-4 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"></path>
+                </svg>
+                <span class="sr-only">Previous</span>
+              </span>
+            </button>
+            <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                <svg class="w-4 h-4 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"></path>
+                </svg>
+                <span class="sr-only">Next</span>
+              </span>
+            </button>
           </div>
-
+        </div>
+        <div class="mt-10 streaming hidden text-center items-center justify-center md:flex md:flex-row">
+          <a href="https://hulu.com" target="_blank"><img class="w-20 m-3" src="img/hulu.svg" alt="Images des télédifuseurs hulu" ></a>
+          <a href="https://netflix.com" target="_blank"><img class="w-24 m-3" src="img/netflix.svg" alt="Images des télédifuseurs netflix" ></a>
+          <a href="https://appletv.com" target="_blank"><img class="w-20 m-3" src="img/appletv.svg" alt="Images des télédifuseurs apple tv" ></a>
         </div>
       </div>
     </section>
+
+    <section class="bg-sky-100">
+      <h2 class="screen-reader-text">Section d'images, extraits et contenu inédit et d'inscription à l'infolettre</h2>
+      <div class="container flex flex-col items-center text-center mx-auto pb-16">
+        <div class="grid xl:grid-cols-3">
+          <div class="xl:col-span-1/3"></div>
+          <div class="xl:col-span-1/3 py-12 flex justify-center">
+            <h2 class="title__sub text-center text-5xl">IMAGES ET EXTRAITS</h2>
+          </div>
+
+          <div class="xl:col-span-1/3"></div>
+        </div>
+
+        <div class="grid xl:grid-cols-3">
+          <div class="xl:col-span-1/3"></div>
+
+          <div class="xl:col-span-1/3 flex justify-center items-center flex-wrap text-center">
+            <p class="lg:text-2xl p-4 md:p-0 w-4/5 md:w-full">Recevez des images inédites du tournage de «Pulp Fiction» et sachez-en plus sur le film en vous inscrivant à l’infolettre!</p>
+          </div>
+          
+          <div class="xl:col-span-1/3"></div>
+        </div>
+
+        <div class="grid my-14">
+          <form class="p-6 md:p-0 flex xl:flex-row">
+            <div class="flex">
+              <label for="email" class="label--hidden">Entrez vote email</label>
+              <input type="email" id="email" name="email" class="select--btn px-20 w-full border-4 border-black rounded-full" required placeholder="Entrez votre email" >
+            </div>
+            <div>
+              <button class="form--btn py-2 px-4 ml-4" type="submit" value="Submit">S'INSCRIRE</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="container-fluid grid grid-cols-12 mx-auto">
+          <div class="flex flex-col justify-center items-center col-start-4 col-end-10 md:col-start-2 md:col-end-6 xl:col-start-1 xl:col-end-5">
+            <img class="rounded-xl pic__shadow border-solid border-black border-2 hover:border-4" src="img/newsL_1.png" alt="image tirée du film au Hawthorne Grill" >
+            <p class="my-6">L’histoire derrière le Hawthorne Grill</p>
+          </div>
+
+          <div class="flex flex-col justify-center items-center col-start-4 col-end-10 md:col-start-8 md:col-end-12 xl:col-start-5 xl:col-end-9">
+            <img class="rounded-xl pic__shadow border-solid border-black border-2 hover:border-4" src="img/newsL_2.png" alt="image tirée du film au Jackrabbit's slim" >
+            <p class="my-6">La danse iconique au Jackrabbit’s slim</p>
+          </div>
+
+          <div class="flex flex-col justify-center items-center col-start-4 col-end-10 md:col-start-2 md:col-end-6 xl:col-start-9 xl:col-end-13">
+            <img class="rounded-xl pic__shadow border-solid border-black border-2 hover:border-4" src="img/newsL_3.png" alt="image tirée du film lors de la collecte de la mallette d'or" >
+            <p class="mb-20 md:mb-0 mt-6">La révélation de Jules</p>
+            </div>
+
+            <div class="h-36 flex-col justify-center items-center col-start-4 col-end-10 hidden md:block md:col-start-8 md:col-end-12 lg:h-4/5 xl:hidden">
+              <iframe class="pic__shadow pic__shadow--video rounded-xl md:rounded-2xl border-solid border-black border-2 hover:border-4" width="560" height="315" src="https://www.youtube.com/embed/bokzC0iRXoQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="bg--sky hidden xl:block">
+        <div class="container flex flex-col items-center text-center mx-auto">
+          <div class="container-fluid grid grid-cols-12 mx-auto">
+          <div class="h-36 flex-col justify-center items-center col-start-4 col-end-10 xl:h-96 xl:my-28 xl:col-start-4 xl:col-end-10">
+            <iframe class="pic__shadow pic__shadow--video rounded-xl md:rounded-2xl border-solid border-black border-2 hover:border-4" width="560" height="315" src="https://www.youtube.com/embed/bokzC0iRXoQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        </div>
+      </div>
+      </div>
+    </section>
     <section class="bg--charcoal">
-      <h2 class="screen-reader-text">Section de présentation des acteurs et de leurs lignes iconiques du film </h2>
+      <h2 class="screen-reader-text">Section de présentation des acteurs et de leurs lignes iconiques du film</h2>
       <div class="container mx-auto flex pt-32 pb-48">
         <div class="flex flex-col">
           <div class="pl-10 mb-24 flex flex-col items-left">
             <h2 class="f--yellow text-4xl w-full xl:w-4/5 text-left">LES ACTEURS</h2>
-            <p class="pt-3 pr-6 pb-6 text-left w-full xl:w-2/6 text-white">Voici la liste d’acteurs du film, incluant leur dialogue coup de coeur du publique.</p>
+            <p class="pt-3 pr-6 pb-6 text-left w-full xl:w-2/6 text-white">Voici la liste d’acteurs du film, incluant leur dialogue coup de coeur du public.</p>
           </div>
           <div class="px-4 md:px-10 grid grid-cols-12 gap-4 grid-cols-{n} w-full h-full">
             <div class="bg--yellow p-10 mr-5 rounded-lg flex w-full justify-center col-start-3 col-span-8 sm:col-start-auto sm:col-span-6 lg:col-span-4 xl:col-span-3">
               <div class="flex flex-col justify-between">
                 <div>
                   <div>
-                    <img class="items-center mx-auto min-w-full max-w-xs mb-1 h-32" src="img/actor-0.svg" alt="cheveux de Jules" />
+                    <img class="items-center mx-auto min-w-full max-w-xs mb-1 h-32" src="img/actor-0.svg" alt="cheveux de Jules" >
                   </div>
                   <div class="justify-start items-start">
                     <h3 class="mt-5 text-left">Jules Winnfield</h3>
@@ -211,9 +227,9 @@
                   <p class="pb-1 text-left">"Ezekiel 25:17. The path of the righteous man is beset on all sides by the inequities of the selfish and the tyranny of evil men."</p>
                 </div>
                 <div class="mx-0 mb-0 mt-5 flex flex-row card__actor justify-center items-center">
-                  <a class="mr-1" href="https://www.imdb.com/title/tt0110912/" target="_blank"><img src="img/imdb.svg" alt="Icône de Imdb vers lien externe" /></a>
-                  <a class="mr-1" href="https://www.rottentomatoes.com/m/pulp_fiction" target="_blank"><img class="social" src="img/rottentomato.svg" alt="Icône de Rotten Tomatoes vers lien externe" /></a>
-                  <a class="" href="https://en.wikipedia.org/wiki/Pulp_Fiction" target="_blank"><img class="social" src="img/wikipedia.svg" alt="Icône de Rotten Tomatoes vers lien externe" /></a>
+                  <a class="mr-1" href="https://www.imdb.com/title/tt0110912/" target="_blank"><img src="img/imdb.svg" alt="Icône de Imdb vers lien externe" ></a>
+                  <a class="mr-1" href="https://www.rottentomatoes.com/m/pulp_fiction" target="_blank"><img class="social" src="img/rottentomato.svg" alt="Icône de Rotten Tomatoes vers lien externe" ></a>
+                  <a class="" href="https://en.wikipedia.org/wiki/Pulp_Fiction" target="_blank"><img class="social" src="img/wikipedia.svg" alt="Icône de Rotten Tomatoes vers lien externe" ></a>
                 </div>
               </div>
             </div>
@@ -221,7 +237,7 @@
               <div class="flex flex-col justify-between">
                 <div>
                   <div>
-                    <img class="items-center mx-auto min-w-full max-w-xs mb-1 h-32" src="img/actor-1.svg" alt="cheveux de Jules" />
+                    <img class="items-center mx-auto min-w-full max-w-xs mb-1 h-32" src="img/actor-1.svg" alt="cheveux de Jules" >
                   </div>
                   <div class="justify-start items-start">
                     <h3 class="mt-5 text-left">Vincent Vega</h3>
@@ -230,9 +246,9 @@
                   <p class="pb-1 text-left">"And you know what they call a Quarter Pounder with Cheese in Paris? They call it a Royale with Cheese."</p>
                 </div>
                 <div class="mx-0 mb-0 mt-5 flex flex-row card__actor justify-center items-center">
-                  <a class="mr-1" href="https://www.imdb.com/title/tt0110912/" target="_blank"><img src="img/imdb.svg" alt="Icône de Imdb vers lien externe" /></a>
-                  <a class="mr-1" href="https://www.rottentomatoes.com/m/pulp_fiction" target="_blank"><img class="social" src="img/rottentomato.svg" alt="Icône de Rotten Tomatoes vers lien externe" /></a>
-                  <a class="" href="https://en.wikipedia.org/wiki/Pulp_Fiction" target="_blank"><img class="social" src="img/wikipedia.svg" alt="Icône de Rotten Tomatoes vers lien externe" /></a>
+                  <a class="mr-1" href="https://www.imdb.com/title/tt0110912/" target="_blank"><img src="img/imdb.svg" alt="Icône de Imdb vers lien externe" ></a>
+                  <a class="mr-1" href="https://www.rottentomatoes.com/m/pulp_fiction" target="_blank"><img class="social" src="img/rottentomato.svg" alt="Icône de Rotten Tomatoes vers lien externe" ></a>
+                  <a class="" href="https://en.wikipedia.org/wiki/Pulp_Fiction" target="_blank"><img class="social" src="img/wikipedia.svg" alt="Icône de Rotten Tomatoes vers lien externe" ></a>
                 </div>
               </div>
             </div>
@@ -240,7 +256,7 @@
               <div class="flex flex-col justify-between">
                 <div>
                   <div>
-                    <img class="items-center mx-auto min-w-full max-w-xs mb-1 h-32" src="img/actor-2.svg" alt="cheveux de The Wolf" />
+                    <img class="items-center mx-auto min-w-full max-w-xs mb-1 h-32" src="img/actor-2.svg" alt="cheveux de The Wolf" >
                   </div>
                   <div class="justify-start items-start">
                     <h3 class="mt-5 text-left">The Wolf</h3>
@@ -249,19 +265,18 @@
                   <p class="pb-1 text-left">"I'm Winston Wolfe. I solve problems."</p>
                 </div>
                 <div class="mx-0 mb-0 mt-5 flex flex-row card__actor justify-center items-center">
-                  <a class="mr-1" href="https://www.imdb.com/title/tt0110912/" target="_blank"><img src="img/imdb.svg" alt="Icône de Imdb vers lien externe" /></a>
-                  <a class="mr-1" href="https://www.rottentomatoes.com/m/pulp_fiction" target="_blank"><img class="social" src="img/rottentomato.svg" alt="Icône de Rotten Tomatoes vers lien externe" /></a>
-                  <a class="" href="https://en.wikipedia.org/wiki/Pulp_Fiction" target="_blank"><img class="social" src="img/wikipedia.svg" alt="Icône de Rotten Tomatoes vers lien externe" /></a>
+                  <a class="mr-1" href="https://www.imdb.com/title/tt0110912/" target="_blank"><img src="img/imdb.svg" alt="Icône de Imdb vers lien externe" ></a>
+                  <a class="mr-1" href="https://www.rottentomatoes.com/m/pulp_fiction" target="_blank"><img class="social" src="img/rottentomato.svg" alt="Icône de Rotten Tomatoes vers lien externe" ></a>
+                  <a class="" href="https://en.wikipedia.org/wiki/Pulp_Fiction" target="_blank"><img class="social" src="img/wikipedia.svg" alt="Icône de Rotten Tomatoes vers lien externe" ></a>
                 </div>
               </div>
             </div>
-            
 
             <div class="bg--yellow p-10 mr-5 rounded-lg flex w-full justify-center col-start-3 col-span-8 sm:col-start-auto sm:col-span-6 lg:col-span-4 xl:col-span-3">
               <div class="flex flex-col justify-between">
                 <div>
                   <div>
-                    <img class="items-center mx-auto min-w-full max-w-xs mb-1 h-32" src="img/actor-3.svg" alt="cheveux de Mia" />
+                    <img class="items-center mx-auto min-w-full max-w-xs mb-1 h-32" src="img/actor-3.svg" alt="cheveux de Mia" >
                   </div>
                   <div class="justify-start items-start">
                     <h3 class="mt-5 text-left">Mia Wallace</h3>
@@ -270,18 +285,17 @@
                   <p class="pb-1 text-left">"That's when you know you've found somebody special. When you can just shut the fuck up for a minute and comfortably enjoy the silence."</p>
                 </div>
                 <div class="mx-0 mb-0 mt-5 flex flex-row card__actor justify-center items-center">
-                  <a class="mr-1" href="https://www.imdb.com/title/tt0110912/" target="_blank"><img src="img/imdb.svg" alt="Icône de Imdb vers lien externe" /></a>
-                  <a class="mr-1" href="https://www.rottentomatoes.com/m/pulp_fiction" target="_blank"><img class="social" src="img/rottentomato.svg" alt="Icône de Rotten Tomatoes vers lien externe" /></a>
-                  <a class="" href="https://en.wikipedia.org/wiki/Pulp_Fiction" target="_blank"><img class="social" src="img/wikipedia.svg" alt="Icône de Rotten Tomatoes vers lien externe" /></a>
+                  <a class="mr-1" href="https://www.imdb.com/title/tt0110912/" target="_blank"><img src="img/imdb.svg" alt="Icône de Imdb vers lien externe" ></a>
+                  <a class="mr-1" href="https://www.rottentomatoes.com/m/pulp_fiction" target="_blank"><img class="social" src="img/rottentomato.svg" alt="Icône de Rotten Tomatoes vers lien externe" ></a>
+                  <a class="" href="https://en.wikipedia.org/wiki/Pulp_Fiction" target="_blank"><img class="social" src="img/wikipedia.svg" alt="Icône de Rotten Tomatoes vers lien externe" ></a>
                 </div>
               </div>
-
-                </div>
+            </div>
             <div class="bg--yellow p-10 mr-5 rounded-lg flex w-full justify-center col-start-3 col-span-8 sm:col-start-auto sm:col-span-6 lg:col-span-4 xl:col-span-3">
               <div class="flex flex-col justify-between">
                 <div>
                   <div>
-                    <img class="items-center mx-auto w-28 mb-1 h-32" src="img/actor-4.svg" alt="Tête de Butch" />
+                    <img class="items-center mx-auto w-28 mb-1 h-32" src="img/actor-4.svg" alt="Tête de Butch" >
                   </div>
                   <div class="justify-start items-start">
                     <h3 class="mt-5 text-left">Butch Coolidge</h3>
@@ -290,9 +304,9 @@
                   <p class="pb-1 text-left">"Zed's dead, baby. Zed's dead. My name's Pitt. And your ass ain't talkin' your way out of this sh*t."</p>
                 </div>
                 <div class="mx-0 mb-0 mt-5 flex flex-row card__actor justify-center items-center">
-                  <a class="mr-1" href="https://www.imdb.com/title/tt0110912/" target="_blank"><img src="img/imdb.svg" alt="Icône de Imdb vers lien externe" /></a>
-                  <a class="mr-1" href="https://www.rottentomatoes.com/m/pulp_fiction" target="_blank"><img class="social" src="img/rottentomato.svg" alt="Icône de Rotten Tomatoes vers lien externe" /></a>
-                  <a class="" href="https://en.wikipedia.org/wiki/Pulp_Fiction" target="_blank"><img class="social" src="img/wikipedia.svg" alt="Icône de Rotten Tomatoes vers lien externe" /></a>
+                  <a class="mr-1" href="https://www.imdb.com/title/tt0110912/" target="_blank"><img src="img/imdb.svg" alt="Icône de Imdb vers lien externe" ></a>
+                  <a class="mr-1" href="https://www.rottentomatoes.com/m/pulp_fiction" target="_blank"><img class="social" src="img/rottentomato.svg" alt="Icône de Rotten Tomatoes vers lien externe" ></a>
+                  <a class="" href="https://en.wikipedia.org/wiki/Pulp_Fiction" target="_blank"><img class="social" src="img/wikipedia.svg" alt="Icône de Rotten Tomatoes vers lien externe" ></a>
                 </div>
               </div>
             </div>
@@ -301,7 +315,7 @@
               <div class="flex flex-col justify-between">
                 <div>
                   <div>
-                    <img class="items-center mx-auto w-28 mb-1 h-32" src="img/actor-5.svg" alt="Tête de Marsellus" />
+                    <img class="items-center mx-auto w-28 mb-1 h-32" src="img/actor-5.svg" alt="Tête de Marsellus" >
                   </div>
                   <div class="justify-start items-start">
                     <h3 class="mt-5 text-left">Marsellus Wallace</h3>
@@ -310,9 +324,9 @@
                   <p class="pb-1 text-left">"I'm 'a get medieval on your ass."</p>
                 </div>
                 <div class="mx-0 mb-0 mt-5 flex flex-row card__actor justify-center items-center">
-                  <a class="mr-1" href="https://www.imdb.com/title/tt0110912/" target="_blank"><img src="img/imdb.svg" alt="Icône de Imdb vers lien externe" /></a>
-                  <a class="mr-1" href="https://www.rottentomatoes.com/m/pulp_fiction" target="_blank"><img class="social" src="img/rottentomato.svg" alt="Icône de Rotten Tomatoes vers lien externe" /></a>
-                  <a class="" href="https://en.wikipedia.org/wiki/Pulp_Fiction" target="_blank"><img class="social" src="img/wikipedia.svg" alt="Icône de Rotten Tomatoes vers lien externe" /></a>
+                  <a class="mr-1" href="https://www.imdb.com/title/tt0110912/" target="_blank"><img src="img/imdb.svg" alt="Icône de Imdb vers lien externe" ></a>
+                  <a class="mr-1" href="https://www.rottentomatoes.com/m/pulp_fiction" target="_blank"><img class="social" src="img/rottentomato.svg" alt="Icône de Rotten Tomatoes vers lien externe" ></a>
+                  <a class="" href="https://en.wikipedia.org/wiki/Pulp_Fiction" target="_blank"><img class="social" src="img/wikipedia.svg" alt="Icône de Rotten Tomatoes vers lien externe" ></a>
                 </div>
               </div>
             </div>
@@ -320,7 +334,7 @@
               <div class="flex flex-col justify-between">
                 <div>
                   <div>
-                    <img class="items-center mx-auto min-w-full max-w-xs mb-1 h-32" src="img/actor-6.svg" alt="cheveux de Jimmy" />
+                    <img class="items-center mx-auto min-w-full max-w-xs mb-1 h-32" src="img/actor-6.svg" alt="cheveux de Jimmy" >
                   </div>
                   <div class="justify-start items-start">
                     <h3 class="mt-5 text-left">Jimmy Dimmick</h3>
@@ -329,9 +343,9 @@
                   <p class="pb-1 text-left">"I don't wanna know anything about anything. I wanna be a mushroom. In the dark. In the dirt. Don't tell me nothing."</p>
                 </div>
                 <div class="mx-0 mb-0 mt-5 flex flex-row card__actor justify-center items-center">
-                  <a class="mr-1" href="https://www.imdb.com/title/tt0110912/" target="_blank"><img src="img/imdb.svg" alt="Icône de Imdb vers lien externe" /></a>
-                  <a class="mr-1" href="https://www.rottentomatoes.com/m/pulp_fiction" target="_blank"><img class="social" src="img/rottentomato.svg" alt="Icône de Rotten Tomatoes vers lien externe" /></a>
-                  <a class="" href="https://en.wikipedia.org/wiki/Pulp_Fiction" target="_blank"><img class="social" src="img/wikipedia.svg" alt="Icône de Rotten Tomatoes vers lien externe" /></a>
+                  <a class="mr-1" href="https://www.imdb.com/title/tt0110912/" target="_blank"><img src="img/imdb.svg" alt="Icône de Imdb vers lien externe" ></a>
+                  <a class="mr-1" href="https://www.rottentomatoes.com/m/pulp_fiction" target="_blank"><img class="social" src="img/rottentomato.svg" alt="Icône de Rotten Tomatoes vers lien externe" ></a>
+                  <a class="" href="https://en.wikipedia.org/wiki/Pulp_Fiction" target="_blank"><img class="social" src="img/wikipedia.svg" alt="Icône de Rotten Tomatoes vers lien externe" ></a>
                 </div>
               </div>
             </div>
@@ -339,7 +353,7 @@
               <div class="flex flex-col justify-between">
                 <div>
                   <div class="flex justify-center items-center">
-                    <img class="items-center mx-auto min-w-full max-w-xs mb-1 h-32" src="img/actor-7.svg" alt="Tête de Gimp" />
+                    <img class="items-center mx-auto min-w-full max-w-xs mb-1 h-32" src="img/actor-7.svg" alt="Tête de Gimp" >
                   </div>
                   <div class="justify-start items-start">
                     <h3 class="mt-5 text-left">The Gimp</h3>
@@ -349,9 +363,9 @@
                   <p class="screen-reader-text">Le personnage présenté n'a aucune ligne de texte dans le film.</p>
                 </div>
                 <div class="mx-0 mb-0 mt-5 flex flex-row card__actor justify-center items-center">
-                  <a class="mr-1" href="https://www.imdb.com/title/tt0110912/" target="_blank"><img src="img/imdb.svg" alt="Icône de Imdb vers lien externe" /></a>
-                  <a class="mr-1" href="https://www.rottentomatoes.com/m/pulp_fiction" target="_blank"><img class="social" src="img/rottentomato.svg" alt="Icône de Rotten Tomatoes vers lien externe" /></a>
-                  <a class="" href="https://en.wikipedia.org/wiki/Pulp_Fiction" target="_blank"><img class="social" src="img/wikipedia.svg" alt="Icône de Rotten Tomatoes vers lien externe" /></a>
+                  <a class="mr-1" href="https://www.imdb.com/title/tt0110912/" target="_blank"><img src="img/imdb.svg" alt="Icône de Imdb vers lien externe" ></a>
+                  <a class="mr-1" href="https://www.rottentomatoes.com/m/pulp_fiction" target="_blank"><img class="social" src="img/rottentomato.svg" alt="Icône de Rotten Tomatoes vers lien externe" ></a>
+                  <a class="" href="https://en.wikipedia.org/wiki/Pulp_Fiction" target="_blank"><img class="social" src="img/wikipedia.svg" alt="Icône de Rotten Tomatoes vers lien externe" ></a>
                 </div>
               </div>
             </div>
@@ -361,82 +375,78 @@
     </section>
     <section>
       <div class="container mx-auto flex flex-col justify-center items h-auto my-24">
-      <h2 class="screen-reader-text">Section des commentaires de la critique, ainsi que des images tirées du film.</h2>
+        <h2 class="screen-reader-text">Section des commentaires de la critique, ainsi que des images tirées du film.</h2>
         <div class="grid grid-cols-12 gap-1">
-            <h2 class="col-span-12 flex justify-center mb-10 f--caramel text-4xl w-full text-center">LA CRITIQUE</h2>
-            <div class="md:col-start-2 md:col-end-6 col-span-12 flex flex-col items-center p-6 md:p-2">
-                <img src="img/image11.png" alt="image de Butch avec son habi de boxe et son entraineur" />
-            </div>
-            <div
-                class="md:col-start-8 md:col-end-12 md:mt-0 col-span-12 flex flex-col items-center justify-center text-center mt-8">
-                <p class="p-6 md:p-2">« Pulp Fiction est un chef-d'œuvre du cinéma moderne, avec une réalisation ingénieuse, un scénario
-                    captivant et des performances exceptionnelles. 10/10 » - Roger Ebert</p>
-            </div>
-
-            <div
-                class="text__hover--hidden md:col-start-2 md:col-end-6 md:mt-0 col-span-12 flex flex-col items-center justify-center text-center">
-                <p class="hidden md:block">« Tarantino a créé un film audacieux et hypnotique qui repousse les limites de la narration
-                    cinématographique. Pulp Fiction est un tour de force cinématographique qui mérite tous les éloges.
-                    9/10 » - Empire Magazine</p>
-            </div>
-            <img class="hidden md:block w-24 col-start-6 col-end-8 col-span-2 mx-auto" src="img/burger-image.svg" alt="Illustration d'un burger déconstruit"></img>
-            <div class="md:col-start-8 md:col-end-12 col-span-12 flex flex-col items-center mt-8 p-6 md:p-2">
-                <img src="img/image9.png" alt="image de Jules qui tiens un révolver." />
-            </div>
-
-            <div
-                class="md:hidden md:col-start-2 md:col-end-6 md:mt-0 col-span-12 flex flex-col items-center justify-center text-center my-8">
-                <p class="p-6 md:p-2">« Tarantino a créé un film audacieux et hypnotique qui repousse les limites de la narration
-                    cinématographique. Pulp Fiction est un tour de force cinématographique qui mérite tous les éloges.
-                    9/10 » - Empire Magazine</p>
-            </div>
-            <div class="md:col-start-2 md:col-end-6 col-span-12 flex flex-col items-center mt-8 p-6 md:p-2">
-                <img src="img/image10.png" alt="image de Vincent aux toilettes qui lit une revue de pulp fiction." />
-            </div>
-            <div class="md:col-start-8 md:col-end-12 md:mt-0 col-span-12 flex flex-col items-center justify-center text-center mt-8">
-                <p class="p-6 md:p-2 md:mt-8">
-                    « Pulp Fiction est un mélange parfait d'humour noir, de violence stylisée et de personnages
-                    inoubliables. Tarantino offre une expérience cinématographique unique qui reste gravée dans l'esprit
-                    du spectateur bien après la fin du film.
-                    9.5/10 » - Rotten Tomatoes.
-                </p>
-            </div>
-        </div>
-            <div class="streaming flex flex-row text-center items-center justify-center mt-24 p-4 md:p-2">
-              <a href="https://www.oscars.org/" target="_blank"><img class="w-24 m-3" src="img/awards.svg" alt="Lien et image de la nomination du film" /></a>
-              <a href="https://www.oscars.org/" target="_blank"><img class="w-24 m-3" src="img/best-award.svg" alt="Lien et image de la nomination du meilleur prix" /></a>
-              <a href="https://www.oscars.org/" target="_blank"><img class="w-24 m-3" src="img/best-actor.svg" alt="Lien et image de la nomination du meilleur acteur" /></a>
-              <a href="https://www.oscars.org/" target="_blank"><img class="w-24 m-3" src="img/best-film.svg" alt="Lien et image de la nomination du meilleur film" /></a>
-            </div>
+          <h2 class="col-span-12 flex justify-center mb-10 f--caramel text-4xl w-full text-center">LA CRITIQUE</h2>
+          <div class="md:col-start-2 md:col-end-6 col-span-12 flex flex-col items-center p-6 md:p-2">
+            <img class="rounded-2xl" src="img/critic_1.png" alt="image de Butch avec son habi de boxe et son entraineur" >
           </div>
+          <div class="md:col-start-8 md:col-end-12 md:mt-0 col-span-12 flex flex-col items-center justify-center text-center mt-8">
+            <p class="p-6 md:p-2">« Pulp Fiction est un chef-d'œuvre du cinéma moderne, avec une réalisation ingénieuse, un scénario captivant et des performances exceptionnelles. 10/10 » - Roger Ebert</p>
+          </div>
+
+          <div class="text__hover--hidden md:col-start-2 md:col-end-6 md:mt-0 col-span-12 flex flex-col items-center justify-center text-center">
+            <p class="hidden md:block">
+              « Tarantino a créé un film audacieux et hypnotique qui repousse les limites de la narration cinématographique. Pulp Fiction est un tour de force cinématographique qui mérite tous les éloges. 9/10 » - Empire Magazine
+            </p>
+          </div>
+          <img class="hidden md:block w-24 col-start-6 col-end-8 col-span-2 mx-auto" src="img/burger-image.svg" alt="Illustration d'un burger déconstruit" >
+          <div class="md:col-start-8 md:col-end-12 col-span-12 flex flex-col items-center mt-8 p-6 md:p-2">
+            <img class="rounded-2xl" src="img/critic_2.png" alt="image de Jules qui tiens un révolver." >
+          </div>
+
+          <div class="md:hidden md:col-start-2 md:col-end-6 md:mt-0 col-span-12 flex flex-col items-center justify-center text-center my-8">
+            <p class="p-6 md:p-2">
+              « Tarantino a créé un film audacieux et hypnotique qui repousse les limites de la narration cinématographique. Pulp Fiction est un tour de force cinématographique qui mérite tous les éloges. 9/10 » - Empire Magazine
+            </p>
+          </div>
+          <div class="md:col-start-2 md:col-end-6 col-span-12 flex flex-col items-center mt-8 p-6 md:p-2">
+            <img class="rounded-2xl" src="img/critic_3.png" alt="image de Vincent aux toilettes qui lit une revue de pulp fiction." >
+          </div>
+          <div class="md:col-start-8 md:col-end-12 md:mt-0 col-span-12 flex flex-col items-center justify-center text-center mt-8">
+            <p class="p-6 md:p-2 md:mt-8">
+              « Pulp Fiction est un mélange parfait d'humour noir, de violence stylisée et de personnages inoubliables. Tarantino offre une expérience cinématographique unique qui reste gravée dans l'esprit du spectateur bien après la fin du film.
+              9.5/10 » - Rotten Tomatoes.
+            </p>
+          </div>
+        </div>
+        <div class="streaming flex flex-row text-center items-center justify-center mt-24 p-4 md:p-2">
+          <a href="https://www.oscars.org/" target="_blank"><img class="w-24 m-3" src="img/awards.svg" alt="Lien et image de la nomination du film" ></a>
+          <a href="https://www.oscars.org/" target="_blank"><img class="w-24 m-3" src="img/best-award.svg" alt="Lien et image de la nomination du meilleur prix" ></a>
+          <a href="https://www.oscars.org/" target="_blank"><img class="w-24 m-3" src="img/best-actor.svg" alt="Lien et image de la nomination du meilleur acteur" ></a>
+          <a href="https://www.oscars.org/" target="_blank"><img class="w-24 m-3" src="img/best-film.svg" alt="Lien et image de la nomination du meilleur film" ></a>
+        </div>
+      </div>
     </section>
 
-
     <footer class="bg--charcoal">
-        <div class="flex flex-wrap items-center justify-center lg:justify-between container mx-auto">
-            <div class="mt-5 flex flex-col sm:flex-row justify-center items-center lg:flex-col">
-                <div class="flex flex-row">
-                    <a class="mx-5 mt-3 sm:mt-0 sm:mx-4 text-center hover:opacity-50" href="tel:+18008439653"> <img class="max-h-10 sm:w-full md:w-auto inline-flex lg:mr-2" src="img/footer__coffee.svg" alt="Tasse de café chaud" />+1 (800) THE WOLF</a>
-                    <a class="mx-5 mt-3 sm:mt-0 sm:mx-4 text-center hover:opacity-50" href="mailto:666@mrwallace.com"> <img class="max-h-10 sm:w-full md:w-auto inline-flex lg:mr-2" src="img/footer__briefcase.svg" alt="icône de malette" />666@MrWallace.com</a>
-                </div>
-                <a class="mt-5 sm:mt-0 sm:mx-4 lg:mt-4 lg:mb-8 text-center items-center hover:opacity-50" href="https://formation-mauricie.ca/programme/developpement-web/" target="_blank"> <img class="mr-2 max-h-10 sm:w-full md:w-auto inline-flex" src="img/footer__cherry.svg" alt="icône de cerise" />CÉGEP DE TROIS-RIVIÈRES</a>
-            </div>
-            <div class="flex flex-col lg:flex-row justify-between items-center lg:mr-5">
-                <div class="flex flex-col mt-10  items-center justify-center  sm:flex-row sm:justify-between lg:mt-0 lg:mr-3 lg:flex-col">
-                        <h3 class="text-center">WRITTEN AND DIRECTED BY</h3>
-                        <div class="flex flex-col items-center justify-center sm:flex-row lg:flex-col">
-                            <a class="my-2 text-center sm:text-center sm:ml-3 sm:my-0 lg:mt-2 hover:opacity-50" href="https://www.anthonylemay.com" target="_blank">ANTHONY LEMAY</a>
-                            <a class="my-2 text-center sm:text-center sm:ml-3 sm:my-0 lg:mt-2 hover:opacity-50" href="https://www.raphaelvilleneuve.com" target="_blank">RAPHAËL VILLENEUVE</a>
-                        </div>
-                </div>
-                <div class="my-5 ml-4 md:ml-0 inline-flex place-items-center">
-                    <a class="mx-3 sm:mx-1" href="https://www.imdb.com/title/tt0110912/" target="_blank"> <img class="social" src="img/imdb.svg" alt="Icône de Imdb vers lien externe" /></a>
-                    <a class="mx-3 sm:mx-1" href="https://www.rottentomatoes.com/m/pulp_fiction" target="_blank"><img class="social" src="img/rottentomato.svg" alt="Icône de Rotten Tomatoes vers lien externe" /></a>
-                    <a class="mx-3 sm:mx-1" href="https://en.wikipedia.org/wiki/Pulp_Fiction" target="_blank"><img class="social" src="img/wikipedia.svg" alt="Icône de Rotten Tomatoes vers lien externe" /></a>
-                </div>
-            </div>
+      <div class="flex flex-wrap items-center justify-center lg:justify-between container mx-auto">
+        <div class="mt-5 flex flex-col sm:flex-row justify-center items-center lg:flex-col">
+          <div class="flex flex-row">
+            <a class="mx-5 mt-3 sm:mt-0 sm:mx-4 text-center hover:opacity-50" href="tel:+18008439653"> <img class="max-h-10 sm:w-full md:w-auto inline-flex lg:mr-2" src="img/footer__coffee.svg" alt="Tasse de café chaud" >+1 (800) THE WOLF</a>
+            <a class="mx-5 mt-3 sm:mt-0 sm:mx-4 text-center hover:opacity-50" href="mailto:666@mrwallace.com">
+              <img class="max-h-10 sm:w-full md:w-auto inline-flex lg:mr-2" src="img/footer__briefcase.svg" alt="icône de mallette" >666@MrWallace.com</a
+            >
+          </div>
+          <a class="mt-5 sm:mt-0 sm:mx-4 lg:mt-4 lg:mb-8 text-center items-center hover:opacity-50" href="https://formation-mauricie.ca/programme/developpement-web/" target="_blank">
+            <img class="mr-2 max-h-10 sm:w-full md:w-auto inline-flex" src="img/footer__cherry.svg" alt="icône de cerise" >CÉGEP DE TROIS-RIVIÈRES</a
+          >
         </div>
+        <div class="flex flex-col lg:flex-row justify-between items-center lg:mr-5">
+          <div class="flex flex-col mt-10 items-center justify-center sm:flex-row sm:justify-between lg:mt-0 lg:mr-3 lg:flex-col">
+            <h3 class="text-center">WRITTEN AND DIRECTED BY</h3>
+            <div class="flex flex-col items-center justify-center sm:flex-row lg:flex-col">
+              <a class="my-2 text-center sm:text-center sm:ml-3 sm:my-0 lg:mt-2 hover:opacity-50" href="https://www.anthonylemay.com" target="_blank">ANTHONY LEMAY</a>
+              <a class="my-2 text-center sm:text-center sm:ml-3 sm:my-0 lg:mt-2 hover:opacity-50" href="https://www.raphaelvilleneuve.com" target="_blank">RAPHAËL VILLENEUVE</a>
+            </div>
+          </div>
+          <div class="my-5 ml-4 md:ml-0 inline-flex place-items-center">
+            <a class="mx-1 md:mx-3" href="https://www.imdb.com/title/tt0110912/" target="_blank"> <img class="social" src="img/imdb.svg" alt="Icône de Imdb vers lien externe" ></a>
+            <a class="mx-1 md:mx-3" href="https://www.rottentomatoes.com/m/pulp_fiction" target="_blank"><img class="social" src="img/rottentomato.svg" alt="Icône de Rotten Tomatoes vers lien externe" ></a>
+            <a class="mx-1 md:mx-3" href="https://en.wikipedia.org/wiki/Pulp_Fiction" target="_blank"><img class="social" src="img/wikipedia.svg" alt="Icône de Rotten Tomatoes vers lien externe" ></a>
+          </div>
+        </div>
+      </div>
     </footer>
-
   </body>
 </html>

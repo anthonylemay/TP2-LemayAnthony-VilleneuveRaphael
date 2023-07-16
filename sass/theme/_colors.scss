@@ -32,6 +32,10 @@ $caramel: #9B6112;
     background-color: $red;
 }
 
+@mixin bg--sky{
+    background-color: $sky;
+}
+
 .f--caramel {
     @include f--caramel;
   }
@@ -54,6 +58,10 @@ $caramel: #9B6112;
 
 .bg--red{
     @include bg--red;
+}
+
+.bg--sky{
+    @include bg--sky;
 }
 
 @media (min-width: 768px) {
