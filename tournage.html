@@ -30,13 +30,13 @@
                         class="flex flex-col justify-center items-baseline mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
                         <li class="mx-4 my-6 md:my-0">
                             <a href="index.html"
-                                class="flex items-end py-2 pl-3 pr-4 f--yellow border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0"
-                                aria-current="page"><img class="inline-flex mr-3 align-bottom" src="./img/smoke.svg"
+                                class="flex items-end py-2 pl-3 pr-4 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 custom-menu-hover md:p-0"
+                                ><img class="inline-flex mr-3 align-bottom" src="./img/smoke.svg"
                                     alt="icône de cigarettes Red Apple" /><span>Accueil</span></a>
                         </li>
                         <li class="mx-4 my-6 md:my-0">
                             <a href="tournage.html"
-                                class="flex items-end py-2 pl-3 pr-4 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 custom-menu-hover md:p-0"><img
+                                class="flex items-end py-2 pl-3 pr-4 f--yellow border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 custom-menu-hover md:p-0" aria-current="page"><img
                                     class="inline-flex mr-2 align-bottom" src="./img/milkshake.svg"
                                     alt="icône de Milkshake à 5$" />Tournage</a>
                         </li>
@@ -60,17 +60,17 @@
         </nav>
     </header>
     <main>
-
-       
-            <section class="flex justify-evenly ">
+            <section>
+              <div class="container mx-auto flex items-center justify-center">
+              <h2 class="screen-reader-text">Section des statistiques sur le film.</h2>
                 <div class="lg:my-24 flex flex-col-reverse lg:flex-row items-center  lg:justify-between">
-                    <div class="mt-20 flex items-start justify-evenly">
-                        <img class="relative right-6 w-3/4" src="img/image_premiere_sec_tournage.png"
+                    <div class="mt-20 flex items-center justify-center">
+                        <img class="relative right-7 w-full md:w-3/4" src="img/image_premiere_sec_tournage.png"
                             alt="Image de deux hommes armés">
                     </div>
                     <div class=" h-96 mt-20  gap-x-12  grid grid-cols-2 text-start gap-y-6 ">
                         <div class="col-span-2">
-                            <H2 class="text-4xl">PULP FICTION</H2>
+                            <h1 class="text-4xl">PULP FICTION</h1>
                             <p>Le film culte en chiffres.</p>
                         </div>
                         <div class="col-span-1">
@@ -89,17 +89,16 @@
                             <H3 class="title__sub text-4xl">18</H3>
                             <P>Oscars et prix de <br> festivals gagnés</P>
                         </div>
-                        <div class="my-24 relative col-span-2"><button class=" form--btn absolute bottom-0 p-2 ">en
-                                savoir plus</button></div>
-
+                        <div class="my-24 relative col-span-2"><button class=" form--btn absolute bottom-0 p-2 ">EN SAVOIR PLUS</button></div>
                     </div>
                 </div>
-
+              </div>
             </section>
 
 
 
             <section class="container mx-auto">
+              <h2 class="screen-reader-text">Section d'images du tournage du film.</h2>
                 <div class="lg:w-4/5 my-20 container container-fluid grid grid-cols-12 gap-x-4 gap-y-6">
                     <div class="col-start-3 col-end-7 lg:col-span-4 flex justify-center items-center m-0"><img
                             class="rounded-lg" src="img/tournage_1.png" alt="Image des caméraman."></div>
@@ -118,6 +117,7 @@
 
   <section class="bg--red">
 <div class="container mx-auto p-20">
+  <h2 class="screen-reader-text">Section de détails et explications derrière la réalisation du film Pulp Fiction.</h2>
     <h2 class="flex items-center justify-center text-center text-5xl text-white">LES ORIGINES</h2>
     <p class="text-center text-white pt-4 m-4 w-full flex justify-center">Voici toute l’inspiration et l’historique détaillé qui a mené Quantin Tarantino à réaliser «Pulp Fiction».</p>
  <div class="flex flex-between flex-wrap items-start justify-center lg:flex-nowrap">
@@ -190,7 +190,7 @@
             </div>
           </div>
       </div>
-<div id="accordion-collapse" data-accordion="collapse" class="w-full lg:w-1/2 mt-2 lg:m-2">
+<div id="accordion-collapse-2" data-accordion="collapse" class="w-full lg:w-1/2 mt-2 lg:m-2">
     <h2 class="tonic" id="accordion-collapse-heading-6">
       <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-4xl text-left text-white hover:text-black  border-4 mt-4 border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-gray-100" data-accordion-target="#accordion-collapse-body-6" aria-expanded="false" aria-controls="accordion-collapse-body-6">
         <span>LES EMPLACEMENTS</span>
