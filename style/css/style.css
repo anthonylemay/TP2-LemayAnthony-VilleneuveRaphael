@@ -38,8 +38,11 @@ h4, h3, h2, h1 {
 
 p {
   font-family: "yrsa", sans-serif;
-  font-size: 1rem;
   font-weight: 900;
+}
+
+.tonic {
+  font-family: "rama-slab-e", sans-serif;
 }
 
 nav ul li {
