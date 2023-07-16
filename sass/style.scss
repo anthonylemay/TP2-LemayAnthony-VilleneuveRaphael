@@ -12,14 +12,8 @@ body {
   background-color: colors.$cream;
 }
 
-@media (max-width:767px){
-  .text__hover--hidden{
-    display: none;
-  }
-//   .movie__pic{
-//   display: none;
-// }
-
+.firstSec_hauteur{
+  height: 700px;
 }
 
 .screen-reader-text {
@@ -57,10 +51,9 @@ select {
   font-family: fonts.$p;
   font-weight: fonts.$ultra;
   border: .25rem solid colors.$black;
+  margin: 1rem;
   text-align: center;
-  align-items:center;
-  justify-content: center;
-  width: auto;
+  padding: .5rem 2rem;
 
   &:hover {
     color: colors.$white;
@@ -69,15 +62,15 @@ select {
 }
 
 button.form--btn {
+  padding: 0.25rem 3.5rem;
+  margin: 1rem;
   font-family: fonts.$tonic;
   font-size: fonts.$font-size;
   color: colors.$white;
   background-color: colors.$black;
   border: 0 solid;
   display: flex;
-  align-items:center;
-  justify-content: center;
-  width: auto;
+  place-items: center;
 
   &:hover {
     color: colors.$black;

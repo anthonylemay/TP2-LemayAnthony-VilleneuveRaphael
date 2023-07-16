@@ -88,11 +88,10 @@ body {
   background-color: #FEF6D6;
 }
 
-@media (max-width: 767px) {
-  .text__hover--hidden {
-    display: none;
-  }
+.firstSec_hauteur {
+  height: 700px;
 }
+
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -128,10 +127,9 @@ select {
   font-family: "yrsa", sans-serif;
   font-weight: 900;
   border: 0.25rem solid #000000;
+  margin: 1rem;
   text-align: center;
-  align-items: center;
-  justify-content: center;
-  width: auto;
+  padding: 0.5rem 2rem;
 }
 .select--btn:hover {
   color: #ffffff;
@@ -139,15 +137,15 @@ select {
 }
 
 button.form--btn {
+  padding: 0.25rem 3.5rem;
+  margin: 1rem;
   font-family: "rama-slab-e", sans-serif;
   font-size: 1.75rem;
   color: #ffffff;
   background-color: #000000;
   border: 0 solid;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: auto;
+  place-items: center;
 }
 button.form--btn:hover {
   color: #000000;
