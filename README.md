@@ -1,20 +1,22 @@
 # TP2-LemayAnthony-VilleneuveRaphael
 
-git push --force origin raph_branch
-
 **Mandat**
+
 Site Web fictif sur la thématique du film «Pulp fiction».
 
 **Cours**
+
 Intégration d'interfaces Web 2
 AEC en développement Front-End Hiver 2023
 Cohorte 01050
 
 **Coéquipiers**
+
 Anthony Lemay ID#6206911
 Raphael Villeneuve ID#1532416
 
 **Composantes Tailwind**
+
 Menu de naviguation - FlowBite Tailwind CSS Mega Menu
 https://flowbite.com/docs/components/mega-menu/
 
